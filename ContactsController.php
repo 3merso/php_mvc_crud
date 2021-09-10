@@ -28,7 +28,7 @@ class ContactsController extends Controller
         $id = (int) $data['id'];
         $contact = Contact::find($id);
  
-        return $this->view('form', ['contato' => $contact]);
+        return $this->view('form', ['contact' => $contact]);
     }
  
     /**
